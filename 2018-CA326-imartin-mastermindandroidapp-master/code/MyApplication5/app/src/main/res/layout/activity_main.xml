@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context="com.gg.user.mastermind.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_nextpage"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/logo_image"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-40dp"
+            android:background="@color/buttonWhite"
+            android:text="@string/bttn" />
+
+        <Button
+            android:id="@+id/btn_settingpage"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/btn_nextpage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/buttonWhite"
+            android:text="@string/setting_bttn" />
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/btn_settingpage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/buttonWhite"
+            android:text="@string/quit_bttn" />
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/mastermind_background_big"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "967067091997",
+    "firebase_url": "https://mastermind-39793955.firebaseio.com",
+    "project_id": "mastermind-39793955",
+    "storage_bucket": "mastermind-39793955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967067091997:android:c9f1c7e30ce65065",
+        "android_client_info": {
+          "package_name": "com.gg.user.mastermind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967067091997-qblv3vt173bj3nan14dfnuubr8s41mk7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "967067091997-ao8iin74hgcbjq7s5mh3tmjauf2prml8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "967067091997-kddgd9vpq1fhgerio6g26n1m57635uhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gg.user.mastermind",
+            "certificate_hash": "90e4d79b1abc94ea4e54342c79db4ef808bed88d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPTHBCVA6EOal4KNhH05y2Q_6p22tELDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967067091997-qblv3vt173bj3nan14dfnuubr8s41mk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

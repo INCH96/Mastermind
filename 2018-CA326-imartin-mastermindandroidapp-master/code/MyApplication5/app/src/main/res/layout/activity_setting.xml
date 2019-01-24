@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offblue"
+    tools:context="com.gg.user.mastermind.SettingActivity">
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/settings_page_text"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsText"
+        android:background="@color/backgroundBlue"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/num_of_pegs_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/pegs_setting"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/duplicate_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/num_of_pegs_setting"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/duplicate_setting"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duplicate_setting_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/time_setting"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/num_of_tries_setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_setting_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tries_setting"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/num_of_pegs_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="4"
+            android:textOn="6"
+            android:layout_alignBottom="@+id/num_of_pegs_setting"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:layout_editor_absoluteX="323dp"
+            tools:layout_editor_absoluteY="146dp" />
+
+        <ToggleButton
+            android:id="@+id/duplicate_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="No"
+            android:textOn="Yes"
+            android:layout_alignBottom="@+id/duplicate_setting_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <ToggleButton
+            android:id="@+id/num_of_tries_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/num_of_tries_setting_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="ToggleButton"
+            android:textOff="10"
+            android:textOn="12" />
+
+        <ToggleButton
+            android:id="@+id/time_setting_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="3 Mins"
+            android:textOn="4 Mins"
+            android:layout_above="@+id/num_of_tries_setting_text"
+            android:layout_alignLeft="@+id/duplicate_toggle_btn"
+            android:layout_alignStart="@+id/duplicate_toggle_btn"
+            android:text="ToggleButton" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_online_start"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/online_start_btn"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_local_start" />
+
+    <Button
+        android:id="@+id/btn_single_start"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/single_start_btn"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_local_start"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_local_start"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/local_start_btn"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_online_start"
+        app:layout_constraintStart_toEndOf="@+id/btn_single_start" />
+
+</android.support.constraint.ConstraintLayout>
